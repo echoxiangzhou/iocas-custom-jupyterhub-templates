@@ -3,14 +3,14 @@
 
 {% block main %}
 <div class="container text-center pangeo">
-    <h1>{{ pangeo_hub_title or 'Pangeo JupyterHub' }}</h1>
+    <h1>{{ pangeo_hub_title or 'IODAP-IOCAS Ocean Data Analysis Platform' }}</h1>
     <h2>{{ pangeo_hub_subtitle }}</h2>
     <p>
       {% if pangeo_welcome %}
       {{ (pangeo_welcome | safe) }}
       {% else %}
-      Welcome to this Pangeo JupyterHub. For more information about Pangeo,
-      visit <a href="http://pangeo.io">pangeo.io</a>.
+      Welcome to IODAP-IOCAS Ocean Data Analysis Platform . For more information about this,
+      visit <a href="http://portal.qdio.ac.cn">IOCAS MSDC Data Portal</a>.
       {% endif %}
     </p>
 </div>
