@@ -1,0 +1,18 @@
+{% extends "templates/login.html" %}
+{% set announcement = '' %}
+
+{% block main %}
+<div class="container text-center pangeo">
+    <h1>{{ 'IODAP-IOCAS Ocean Data Analysis Platform' }}</h1>
+    <h2>{{ pangeo_hub_subtitle }}</h2>
+    <p>
+      {% if pangeo_welcome %}
+      {{ (pangeo_welcome | safe) }}
+      {% else %}
+      Welcome to IODAP-IOCAS Ocean Data Analysis Platform . For more information about this,
+      visit <a href="http://portal.qdio.ac.cn">IOCAS MSDC Data Portal</a>.
+      {% endif %}
+    </p>
+</div>
+{{ super() }}
+{% endblock %}
